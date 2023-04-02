@@ -1,7 +1,7 @@
 import './App.css'
 import Celebres from './components/Celebres'
+import Espacio from './components/Espacio'
 import Fortuna from './components/Fortuna'
-import Espacio from './components/espacio'
 
 function App() {
 
