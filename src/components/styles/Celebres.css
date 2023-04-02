@@ -1,0 +1,42 @@
+/* Estilos para el contenedor de frases */
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+  margin-top: 6rem;
+}
+
+/* Estilos para cada frase */
+.quote {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Estilos para el autor */
+.author {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+/* Estilos para el botón de eliminar */
+.delete-button {
+  background-color: transparent;
+  border: none;
+  color: #888;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.delete-button:hover {
+  color: #5b5fd8;
+}
