@@ -1,74 +1,95 @@
-/* Estilos para la frase célebre */
-.quoteTitle {
-  position: sticky;
-  top: 0px;
-  background-color: white;
-  margin-top: 60px;
-  z-index: 1;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-/* Estilos para cada componente */
 .container {
-  flex-basis: 40%;
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
   border-radius: 10px;
-  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  transition: transform 0.3s;
 }
 
-/* Estilos para la frase */
+.container:hover {
+  transform: scale(1.03);
+}
+
 .quote {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  flex-grow: 1;
-  height: 200px;
-  overflow: auto;
   position: relative;
+  text-align: center;
+  max-width: 100%;
+  max-height: 250px;
+  overflow: hidden;
+  width: 400px;
+  height: 250px;
+}
+
+.quoteTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #333;
 }
 
 .quoteText {
-  font-size: 1.2em;
+  font-size: 20px;
+  margin-top: 10px;
+  padding-top: 50px;
+  font-style: italic;
   max-width: 100%;
-  margin: 0;
+  overflow: auto;
+  width: 400px;
+  height: auto;
+  max-height: 200px;
+  color: #4a4a4a;
 }
 
 .author {
+  font-size: 15px;
+  margin-top: 30px;
   position: absolute;
-  bottom: 5px;
-  right: 5px;
-  font-style: italic;
+  bottom: -15px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  color: #7a7a7a;
 }
 
-/* Estilos para los botones */
 .buttons {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  bottom: -40px;
 }
 
 .button {
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 1em;
-  background-color: #007bff;
-  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
   border: none;
   border-radius: 5px;
+  background-color: #1abc9c;
+  color: #fff;
   cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Estilos para el espacio vacío */
-.Espacio {
-  visibility: hidden;
+.button:hover {
+  background-color: #16a085;
+  transform: translateY(-3px);
+}
+
+.button:active {
+  transform: translateY(0);
 }
