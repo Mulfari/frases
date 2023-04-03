@@ -1,6 +1,6 @@
-import "./styles/Celebres.css";
 import React, { useState, useEffect } from "react";
 import frases from "./frases/celebres.json";
+import './styles/celebres.css'
 
 function Celebres() {
   const [fraseActualIndex, setFraseActualIndex] = useState(
