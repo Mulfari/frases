@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import frases from "./frases/Espacio.json";
+import frases from "./frases/espacio.json";
 import './styles/Estilos.css'
 
 function Espacio() {
