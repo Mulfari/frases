@@ -23,6 +23,7 @@ function Fortuna() {
   return (
     <div className="container">
       <div className="quote">
+        <p className="quoteTitle">Frases de Fortuna</p>
         <p>{fraseActual.phrase}</p>
         <p className="author">- {fraseActual.author}</p>
       </div>

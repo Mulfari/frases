@@ -1,8 +1,9 @@
 .container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 6rem;
+  margin-right: 1rem;
+  flex: 1;
 }
 
 .quote {

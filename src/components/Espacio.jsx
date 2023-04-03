@@ -23,8 +23,10 @@ function Espacio() {
   return (
     <div className="container">
       <div className="quote">
+        
+        <p className="quoteTitle">Curiosidades del espacio</p>
         <p>{fraseActual.quote}</p>
-        <p>- {fraseActual.author}</p>
+        <p className="author">- {fraseActual.author}</p>
       </div>
       <div className="buttons">
         <button onClick={mostrarSiguienteFrase} className={styles.button}>

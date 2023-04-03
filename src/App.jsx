@@ -6,7 +6,7 @@ import Fortuna from './components/Fortuna'
 function App() {
 
   return (
-    <div className="App">
+    <div className="container">
       <Celebres />
       <Espacio />
       <Fortuna />
