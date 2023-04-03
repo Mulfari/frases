@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <h1 className="title">Generador de Frases</h1>
+      <h1 className="title1">Generador de Frases</h1>
       <div className="components-container">
         <Celebres />
         <Espacio />

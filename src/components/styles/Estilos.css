@@ -1,3 +1,16 @@
+/* Estilos para la frase célebre */
+.quoteTitle {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  margin-top: 60px;
+  z-index: 1;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 /* Estilos para cada componente */
 .container {
   flex-basis: 40%;
@@ -19,13 +32,9 @@
   align-items: center;
   margin-bottom: 20px;
   flex-grow: 1;
-  height: 200px; /* Establecer una altura fija para el componente */
-  overflow: auto; /* Agregar una propiedad overflow para que el contenido de la frase no se desborde */
-}
-
-.quoteTitle {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  height: 200px;
+  overflow: auto;
+  position: relative;
 }
 
 .quoteText {
@@ -35,7 +44,9 @@
 }
 
 .author {
-  margin-top: 10px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
   font-style: italic;
 }
 
