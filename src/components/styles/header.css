@@ -1,0 +1,16 @@
+.header {
+  background-color: #e0e9f2;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #ccd8e6;
+}
+
+.header__title {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #40617a;
+  margin: 0;
+}

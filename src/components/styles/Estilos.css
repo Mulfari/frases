@@ -78,7 +78,7 @@
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
-  background-color: #1abc9c;
+  background-color: #3366ff;
   color: #fff;
   cursor: pointer;
   margin-right: 5px;
@@ -86,7 +86,7 @@
 }
 
 .button:hover {
-  background-color: #16a085;
+  background-color: #0040ff;
   transform: translateY(-3px);
 }
 

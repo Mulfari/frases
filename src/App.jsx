@@ -1,12 +1,13 @@
 import Celebres from './components/Celebres'
 import Fortuna from './components/Fortuna'
 import Espacio from './components/Espacio'
+import Header from './components/header'
 import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <h1 className="title1">Quote machine</h1>
+      <Header />
       <div className="components-container">
         <Celebres />
         <Espacio />
