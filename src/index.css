@@ -1,55 +1,53 @@
-/* Reset de algunos estilos del navegador */
-html {
-  box-sizing: border-box;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+.quote {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Estilos globales */
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f5f5f5;
+.quoteTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
   color: #333;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 10px;
 }
 
-/* Establece un tamaño mínimo de fuente y una fuente suave para el texto */
-html {
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.quoteText {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
 }
 
-/* Espaciado entre secciones (por ejemplo, entre el header y el main) */
-section {
-  margin-bottom: 2rem;
+.author {
+  font-size: 1rem;
+  color: #777;
+  font-style: italic;
 }
 
-/* Estilos para enlaces */
-a {
-  text-decoration: none;
-  color: #3498db;
+.buttons {
+  display: flex;
+  gap: 10px;
 }
 
-a:hover {
-  color: #2980b9;
+.button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
 }
