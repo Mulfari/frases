@@ -25,7 +25,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.component-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   gap: 20px;
+  width: 100%;
 }
 
 .component-container {
@@ -33,7 +41,13 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 20px;
-  width: 80%;
+  width: 30%;
   max-width: 600px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .component-container {
+    width: 90%;
+  }
 }

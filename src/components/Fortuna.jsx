@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import frases from "./frases/fortuna.json";
-import styles from "./styles/Fortuna.css";
+import "./styles/Fortuna.css";
 
 function Fortuna() {
   const [fraseActualIndex, setFraseActualIndex] = useState(
@@ -24,19 +24,19 @@ function Fortuna() {
     <div className="container">
       <div className="quote">
         <p className="quoteTitle">Frases de Fortuna</p>
-        <p>{fraseActual.phrase}</p>
+        <p className="quoteText">{fraseActual.phrase}</p>
         <p className="author">- {fraseActual.author}</p>
       </div>
       <div className="buttons">
-        <button onClick={mostrarSiguienteFrase} className={styles.button}>
+        <button onClick={mostrarSiguienteFrase} className="button">
           Siguiente
         </button>
-        <button onClick={mostrarFraseAnterior} className={styles.button}>
+        <button onClick={mostrarFraseAnterior} className="button">
           Anterior
         </button>
       </div>
     </div>
-  );
+  );  
 }
 
 export default Fortuna;

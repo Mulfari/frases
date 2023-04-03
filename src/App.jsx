@@ -11,19 +11,20 @@ function App() {
         <h1>Generador de frases</h1>
       </header>
       <main className="App-main">
-        <div className="component-container">
-          <Celebres />
-        </div>
-        <div className="component-container">
-          <Espacio />
-        </div>
-        <div className="component-container">
-          <Fortuna />
+        <div className="component-row">
+          <div className="component-container">
+            <Celebres />
+          </div>
+          <div className="component-container">
+            <Espacio />
+          </div>
+          <div className="component-container">
+            <Fortuna />
+          </div>
         </div>
       </main>
     </div>
-  );
-  
+  );  
 }
 
 export default App

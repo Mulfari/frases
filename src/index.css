@@ -1,12 +1,55 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f2f2f2;
+/* Reset de algunos estilos del navegador */
+html {
+  box-sizing: border-box;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos globales */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Establece un tamaño mínimo de fuente y una fuente suave para el texto */
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Espaciado entre secciones (por ejemplo, entre el header y el main) */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Estilos para enlaces */
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  color: #2980b9;
 }
