@@ -4,6 +4,15 @@
   margin: 20px;
 }
 
+body {
+  background-image: url("./components/imagenes/imagen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
 /* Estilos para el título */
 .title1 {
   font-size: 3rem; /* Tamaño de fuente */
