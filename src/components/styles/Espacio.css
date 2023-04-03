@@ -15,13 +15,6 @@
   text-align: center;
 }
 
-.author {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-top: 1rem;
-  text-align: right;
-}
-
 .buttons {
   display: flex;
   justify-content: center;

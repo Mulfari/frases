@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import frases from "./frases/espacio.json";
+import styles from "./styles/Espacio.css";
 
 function Espacio() {
   const [fraseActualIndex, setFraseActualIndex] = useState(
@@ -16,17 +17,23 @@ function Espacio() {
   };
 
   useEffect(() => {
-    // Si el índice de la frase actual cambia, se vuelve a renderizar el componente
-    // para mostrar la nueva frase
     setFraseActualIndex(Math.floor(Math.random() * frases.length));
   }, []);
 
   return (
-    <div>
-      <p>{fraseActual.quote}</p>
-      <p>- {fraseActual.author}</p>
-      <button onClick={mostrarSiguienteFrase}>Siguiente</button>
-      <button onClick={mostrarFraseAnterior}>Anterior</button>
+    <div className="container">
+      <div className="quote">
+        <p>{fraseActual.quote}</p>
+        <p>- {fraseActual.author}</p>
+      </div>
+      <div className="buttons">
+        <button onClick={mostrarSiguienteFrase} className={styles.button}>
+          Siguiente
+        </button>
+        <button onClick={mostrarFraseAnterior} className={styles.button}>
+          Anterior
+        </button>
+      </div>
     </div>
   );
 }

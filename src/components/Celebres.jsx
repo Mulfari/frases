@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import styles from "./styles/Celebres.css";
+import React, { useState, useEffect } from "react";
 import frases from "./frases/celebres.json";
-import './styles/Celebres.css'
 
 function Celebres() {
   const [fraseActualIndex, setFraseActualIndex] = useState(
@@ -23,13 +23,21 @@ function Celebres() {
   }, []);
 
   return (
-    <div>
-      <p>{fraseActual.quote}</p>
-      <p>- {fraseActual.author}</p>
-      <button onClick={mostrarSiguienteFrase}>Siguiente</button>
-      <button onClick={mostrarFraseAnterior}>Anterior</button>
-    </div>
-  );
+      <div className="container">
+        <div className="quote">
+          <p className="quoteText">{fraseActual.quote}</p>
+          <p className="author">- {fraseActual.author}</p>
+        </div>
+        <div className="buttons">
+          <button onClick={mostrarSiguienteFrase} className={styles.button}>
+            Siguiente
+          </button>
+          <button onClick={mostrarFraseAnterior} className={styles.button}>
+            Anterior
+          </button>
+        </div>
+      </div>
+    );
 }
 
 export default Celebres;

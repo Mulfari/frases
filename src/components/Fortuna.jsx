@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import frases from "./frases/fortuna.json";
+import styles from "./styles/Fortuna.css";
 
 function Fortuna() {
   const [fraseActualIndex, setFraseActualIndex] = useState(
@@ -16,20 +17,25 @@ function Fortuna() {
   };
 
   useEffect(() => {
-    // Si el índice de la frase actual cambia, se vuelve a renderizar el componente
-    // para mostrar la nueva frase
     setFraseActualIndex(Math.floor(Math.random() * frases.length));
   }, []);
 
   return (
-    <div>
-      <p>{fraseActual.phrase}</p>
-      <p>- {fraseActual.author}</p>
-      <button onClick={mostrarSiguienteFrase}>Siguiente</button>
-      <button onClick={mostrarFraseAnterior}>Anterior</button>
+    <div className="container">
+      <div className="quote">
+        <p>{fraseActual.phrase}</p>
+        <p className="author">- {fraseActual.author}</p>
+      </div>
+      <div className="buttons">
+        <button onClick={mostrarSiguienteFrase} className={styles.button}>
+          Siguiente
+        </button>
+        <button onClick={mostrarFraseAnterior} className={styles.button}>
+          Anterior
+        </button>
+      </div>
     </div>
   );
 }
 
 export default Fortuna;
-
