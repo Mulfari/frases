@@ -1,53 +1,63 @@
+/* Estilos para cada componente */
 .container {
-  background-color: white;
-  border-radius: 10px;
+  flex-basis: 40%;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Estilos para la frase */
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  height: 200px; /* Establecer una altura fija para el componente */
+  overflow: auto; /* Agregar una propiedad overflow para que el contenido de la frase no se desborde */
 }
 
 .quoteTitle {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
 .quoteText {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 1.2em;
+  max-width: 100%;
+  margin: 0;
 }
 
 .author {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #333;
-  text-align: right;
+  margin-top: 10px;
+  font-style: italic;
 }
 
+/* Estilos para los botones */
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
-  background-color: #3498db;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
   border: none;
   border-radius: 5px;
-  color: white;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
 }
 
-.button:hover {
-  background-color: #5dade2;
-  color: white;
+/* Estilos para el espacio vacío */
+.Espacio {
+  visibility: hidden;
 }

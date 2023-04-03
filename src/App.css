@@ -1,0 +1,18 @@
+/* Estilos para el contenedor principal */
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Estilos para el título */
+.title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de los componentes */
+.components-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
