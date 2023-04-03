@@ -6,9 +6,15 @@
 
 /* Estilos para el título */
 .title1 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 3rem; /* Tamaño de fuente */
+  font-weight: bold; /* Grosor de fuente */
+  color: #333; /* Color del texto */
+  text-align: center; /* Alineación del texto */
+  margin-top: 2rem; /* Margen superior */
+  text-shadow: 1px 1px #ccc; /* Sombra del texto */
+  letter-spacing: 2px; /* Espaciado entre letras */
 }
+
 
 /* Estilos para el contenedor de los componentes */
 .components-container {

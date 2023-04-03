@@ -25,7 +25,7 @@ function Celebres() {
   return (
     <div className="container">
       <div className="quote">
-        <p className="quoteTitle">Frase célebre</p>
+        <p className="quoteTitle">Famous quotes</p>
         <p className="quoteText">{fraseActual.quote}</p>
         <p className="author">- {fraseActual.author}</p>
       </div>
