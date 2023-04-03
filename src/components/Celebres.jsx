@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import frases from "./frases/celebres.json";
+import frases from "./frases/Celebres.json";
 import './styles/celebres.css'
 
 function Celebres() {

@@ -1,6 +1,6 @@
 import "./styles/Espacio.css";
 import React, { useState, useEffect } from "react";
-import frases from "./frases/espacio.json";
+import frases from "./frases/Espacio.json";
 
 function Espacio() {
   const [fraseActualIndex, setFraseActualIndex] = useState(

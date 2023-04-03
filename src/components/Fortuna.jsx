@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import frases from "./frases/fortuna.json";
+import frases from "./frases/Fortuna.json";
 import "./styles/Fortuna.css";
 
 function Fortuna() {
