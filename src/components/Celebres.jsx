@@ -1,4 +1,4 @@
-import styles from "./styles/Celebres.css";
+import "./styles/Celebres.css";
 import React, { useState, useEffect } from "react";
 import frases from "./frases/celebres.json";
 
@@ -23,22 +23,23 @@ function Celebres() {
   }, []);
 
   return (
-      <div className="container">
-        <div className="quote">
-          <p className="quoteTitle">Frase Celebre</p>
-          <p className="quoteText">{fraseActual.quote}</p>
-          <p className="author">- {fraseActual.author}</p>
-        </div>
-        <div className="buttons">
-          <button onClick={mostrarSiguienteFrase} className={styles.button}>
-            Siguiente
-          </button>
-          <button onClick={mostrarFraseAnterior} className={styles.button}>
-            Anterior
-          </button>
-        </div>
+    <div className="container">
+      <div className="quote">
+        <p className="quoteTitle">Frase célebre</p>
+        <p className="quoteText">{fraseActual.quote}</p>
+        <p className="author">- {fraseActual.author}</p>
       </div>
-    );
+      <div className="buttons">
+        <button onClick={mostrarSiguienteFrase} className="button">
+          Siguiente
+        </button>
+        <button onClick={mostrarFraseAnterior} className="button">
+          Anterior
+        </button>
+      </div>
+    </div>
+  );
+  
 }
 
 export default Celebres;
