@@ -3,15 +3,8 @@
   text-align: center;
   margin: 20px;
 }
-
-/* Estilos para el cuerpo */
-.body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #5C258D, #4389A2);
-  color: #FFFFFF;
+body {
+  background-color: #0c1e57; /* Reemplaza esto con el tono pastel que desees utilizar */
 }
 
 /* Estilos para el título */

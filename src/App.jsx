@@ -1,6 +1,4 @@
 import Celebres from './components/Celebres'
-import Fortuna from './components/Fortuna'
-import Espacio from './components/Espacio'
 import Header from './components/header'
 import './App.css'
 
@@ -9,9 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="components-container">
-        <Celebres />
-        <Espacio />
-        <Fortuna />
+        <Frase />
       </div>
     </div>
   );

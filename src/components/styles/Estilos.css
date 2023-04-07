@@ -14,6 +14,12 @@
   transition: transform 0.3s;
 }
 
+.fespacio {
+    background-image: url('../imagenes/espacio.avif');
+      background-size: contain;
+    }
+    
+
 .container:hover {
   transform: scale(1.03);
 }
@@ -42,14 +48,15 @@
 .quoteText {
   font-size: 20px;
   margin-top: 10px;
-  padding-top: 50px;
+  padding-top: 25px;
   font-style: italic;
-  max-width: 100%;
-  overflow: auto;
   width: 400px;
-  height: auto;
   max-height: 200px;
-  color: #4a4a4a;
+  color: #5c0a96;
+  background-color: #b2cffd; /* color de fondo de la caja */
+  opacity: 0.7; /* opacidad de la caja */
+  border-radius: 50px;
+  padding-bottom: 25px;
 }
 
 .author {

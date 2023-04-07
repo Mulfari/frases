@@ -21,7 +21,7 @@ function Espacio() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container fespacio">
       <div className="quote">
         <p className="quoteTitle">Cosmic curiosities</p>
         <p className="quoteText">{fraseActual.quote}</p>
