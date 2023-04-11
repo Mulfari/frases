@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import frases from "./frases/espacio.json";
 import './styles/Estilos.css'
 
-function Espacio() {
+function Frase() {
   const [fraseActualIndex, setFraseActualIndex] = useState(
     Math.floor(Math.random() * frases.length)
   );
@@ -39,4 +39,4 @@ function Espacio() {
   );
 }
 
-export default Espacio;
+export default Frase;

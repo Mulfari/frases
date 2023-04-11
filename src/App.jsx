@@ -1,6 +1,6 @@
-import Celebres from './components/Celebres'
 import Header from './components/header'
 import './App.css'
+import Frase from './components/Frase';
 
 function App() {
   return (
