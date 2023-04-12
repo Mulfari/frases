@@ -1,21 +1,29 @@
 import React, { useState, useEffect } from "react";
 import frases from "./frases/espacio.json";
-import './styles/Estilos.css'
+import "./styles/Estilos.css";
 
-function Frase() {
+function Frase({ setBackgroundImageIndex }) {
   const [fraseActualIndex, setFraseActualIndex] = useState(
     Math.floor(Math.random() * frases.length)
-
   );
   const fraseActual = frases[fraseActualIndex];
 
+  const cambiarFondo = () => {
+    setBackgroundImageIndex((prevIndex) => (prevIndex + 1) % 7);
+  };
+
+  const cambiarFondoAnterior = () => {
+    setBackgroundImageIndex((prevIndex) => (prevIndex - 1 + 7) % 7);
+  };
+
   const mostrarSiguienteFrase = () => {
     setFraseActualIndex((fraseActualIndex + 1) % frases.length);
-  
+    cambiarFondo();
   };
 
   const mostrarFraseAnterior = () => {
     setFraseActualIndex((fraseActualIndex - 1 + frases.length) % frases.length);
+    cambiarFondoAnterior();
   };
 
   useEffect(() => {
