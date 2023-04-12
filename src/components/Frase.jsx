@@ -3,6 +3,7 @@ import frases from "./frases/espacio.json";
 import "./styles/Estilos.css";
 
 function Frase({ setBackgroundImageIndex }) {
+  const [visible, setVisible] = useState(false);
   const [fraseActualIndex, setFraseActualIndex] = useState(
     Math.floor(Math.random() * frases.length)
   );
@@ -30,11 +31,17 @@ function Frase({ setBackgroundImageIndex }) {
     setFraseActualIndex(Math.floor(Math.random() * frases.length));
   }, []);
 
+
+useEffect(() => {
+  setVisible(false);
+  const timeout = setTimeout(() => setVisible(true), 100);
+  return () => clearTimeout(timeout);
+}, [fraseActualIndex]);
+
   return (
-    <div className="container fespacio">
+    <div className="container">
       <div className="quote">
-        <p className="quoteTitle">Cosmic curiosities</p>
-        <p className="quoteText">{fraseActual.quote}</p>
+        <p className={`quoteText ${visible ? 'visible' : ''}`}>{fraseActual.quote}</p>
         <p className="author">- {fraseActual.author}</p>
       </div>
       <div className="buttons">

@@ -1,102 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 100%;
-  height: 450px;
+  font-family: 'Orbitron', sans-serif;
+  background-color: rgba(30, 30, 30, 0.8);
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 600px;
+  min-height: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin: 10px;
   position: relative;
-  transition: transform 0.3s;
-}
-
-.fespacio {
-    background-image: url('../imagenes/espacio.avif');
-      background-size: contain;
-    }
-    
-
-.container:hover {
-  transform: scale(1.03);
 }
 
 .quote {
-  position: relative;
-  text-align: center;
-  max-width: 100%;
-  max-height: 250px;
-  overflow: hidden;
-  width: 400px;
-  height: 250px;
-}
-
-.quoteTitle {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  color: #333;
+  margin-bottom: 20px;
+  height: 80px;
 }
 
 .quoteText {
-  font-size: 20px;
-  margin-top: 10px;
-  padding-top: 25px;
-  font-style: italic;
-  width: 400px;
-  max-height: 200px;
-  color: #5c0a96;
-  background-color: #b2cffd; /* color de fondo de la caja */
-  opacity: 0.7; /* opacidad de la caja */
-  border-radius: 50px;
-  padding-bottom: 25px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFD700;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.quoteText.visible {
+  opacity: 1;
 }
 
 .author {
-  font-size: 15px;
-  margin-top: 30px;
-  position: absolute;
-  bottom: -15px;
-  right: 0px;
-  display: flex;
-  align-items: center;
-  color: #7a7a7a;
+  font-size: 18px;
+  font-weight: 300;
+  color: #F0E68C;
 }
 
 .buttons {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 20px;
-  position: relative;
-  bottom: -40px;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  right: 20px;
 }
 
 .button {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 15px;
+  background-color: #4B0082;
+  color: #FFFFFF;
   border: none;
-  border-radius: 5px;
-  background-color: #3366ff;
-  color: #fff;
+  border-radius: 3px;
+  padding: 8px 16px;
+  font-size: 16px;
   cursor: pointer;
-  margin-right: 5px;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .button:hover {
-  background-color: #0040ff;
-  transform: translateY(-3px);
-}
-
-.button:active {
-  transform: translateY(0);
+  background-color: #6A5ACD;
 }
