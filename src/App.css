@@ -1,8 +1,16 @@
 /* Estilos para el contenedor principal */
 .App {
-  text-align: center;
-  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 }
+
+
 
 /* Estilos para el título */
 .title1 {
