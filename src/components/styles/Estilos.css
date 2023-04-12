@@ -1,37 +1,102 @@
-.frases-container {
-  width: 100%;
-  height: 100vh;
+.container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-size: cover;
-  background-position: center;
-}
-
-.frases-content {
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
+  background-color: #ffffff;
   border-radius: 10px;
-  width: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.fespacio {
+    background-image: url('../imagenes/espacio.avif');
+      background-size: contain;
+    }
+    
+
+.container:hover {
+  transform: scale(1.03);
+}
+
+.quote {
+  position: relative;
   text-align: center;
+  max-width: 100%;
+  max-height: 250px;
+  overflow: hidden;
+  width: 400px;
+  height: 250px;
 }
 
-.frases-buttons {
+.quoteTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #333;
+}
+
+.quoteText {
+  font-size: 20px;
+  margin-top: 10px;
+  padding-top: 25px;
+  font-style: italic;
+  width: 400px;
+  max-height: 200px;
+  color: #5c0a96;
+  background-color: #b2cffd; /* color de fondo de la caja */
+  opacity: 0.7; /* opacidad de la caja */
+  border-radius: 50px;
+  padding-bottom: 25px;
+}
+
+.author {
+  font-size: 15px;
+  margin-top: 30px;
+  position: absolute;
+  bottom: -15px;
+  right: 0px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  align-items: center;
+  color: #7a7a7a;
 }
 
-button {
-  padding: 10px;
-  background-color: #2196f3;
-  color: white;
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  bottom: -40px;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
   border: none;
   border-radius: 5px;
+  background-color: #3366ff;
+  color: #fff;
   cursor: pointer;
-  font-size: 14px;
+  margin-right: 5px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover {
-  background-color: #0d8bf2;
+.button:hover {
+  background-color: #0040ff;
+  transform: translateY(-3px);
+}
+
+.button:active {
+  transform: translateY(0);
 }

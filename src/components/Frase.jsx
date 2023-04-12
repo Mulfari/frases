@@ -1,37 +1,44 @@
-import React, { useState } from "react";
-import imagenes from "./imagenes.js";
-import "./styles/Estilos.css";
+import React, { useState, useEffect } from "react";
+import frases from "./frases/espacio.json";
+import './styles/Estilos.css'
 
-const Frases = ({ frases }) => {
-  const [index, setIndex] = useState(0);
-  const [backgroundImage, setBackgroundImage] = useState(imagenes[0]);
+function Frase() {
+  const [fraseActualIndex, setFraseActualIndex] = useState(
+    Math.floor(Math.random() * frases.length)
 
-  const siguienteFrase = () => {
-    const newIndex = index === frases.length - 1 ? 0 : index + 1;
-    setIndex(newIndex);
-    setBackgroundImage(imagenes[newIndex % imagenes.length]);
+  );
+  const fraseActual = frases[fraseActualIndex];
+
+  const mostrarSiguienteFrase = () => {
+    setFraseActualIndex((fraseActualIndex + 1) % frases.length);
+  
   };
 
-  const anteriorFrase = () => {
-    const newIndex = index === 0 ? frases.length - 1 : index - 1;
-    setIndex(newIndex);
-    setBackgroundImage(imagenes[newIndex % imagenes.length]);
+  const mostrarFraseAnterior = () => {
+    setFraseActualIndex((fraseActualIndex - 1 + frases.length) % frases.length);
   };
+
+  useEffect(() => {
+    setFraseActualIndex(Math.floor(Math.random() * frases.length));
+  }, []);
 
   return (
-    <div
-      className="frases-container"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
-      <div className="frases-content">
-        <p className="frase">{frases[index]}</p>
-        <div className="frases-buttons">
-          <button onClick={anteriorFrase}>Anterior</button>
-          <button onClick={siguienteFrase}>Siguiente</button>
-        </div>
+    <div className="container fespacio">
+      <div className="quote">
+        <p className="quoteTitle">Cosmic curiosities</p>
+        <p className="quoteText">{fraseActual.quote}</p>
+        <p className="author">- {fraseActual.author}</p>
+      </div>
+      <div className="buttons">
+        <button onClick={mostrarSiguienteFrase} className="button">
+          Siguiente
+        </button>
+        <button onClick={mostrarFraseAnterior} className="button">
+          Anterior
+        </button>
       </div>
     </div>
   );
-};
+}
 
-export default Frases;
+export default Frase;
