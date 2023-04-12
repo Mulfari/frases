@@ -41,7 +41,7 @@ useEffect(() => {
   return (
     <div className="container">
       <div className="quote">
-        <p className={`quoteText ${visible ? 'visible' : ''}`}>{fraseActual.quote}</p>
+        <p className={`quoteText ${visible ? 'visible' : ''}`}>{fraseActual.phrase}</p>
         <p className="author">- {fraseActual.author}</p>
       </div>
       <div className="buttons">
