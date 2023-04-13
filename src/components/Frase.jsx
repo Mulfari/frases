@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import frases from "./frases/celebre.json";
-import "./styles/Celebre.css";
+import frases from "./frases/espacio.json";
+import "./styles/Estilos.css";
 
-function Celebre({ setBackgroundImageIndex }) {
+function Frase({ setBackgroundImageIndex }) {
   const [visible, setVisible] = useState(false);
   const [fraseActualIndex, setFraseActualIndex] = useState(
     Math.floor(Math.random() * frases.length)
@@ -41,7 +41,7 @@ useEffect(() => {
   return (
     <div className="container">
       <div className="quote">
-        <p className={`quoteText ${visible ? 'visible' : ''}`}>{fraseActual.quote}</p>
+        <p className={`quoteText ${visible ? 'visible' : ''}`}>{fraseActual.phrase}</p>
         <p className="author">- {fraseActual.author}</p>
       </div>
       <div className="buttons">
@@ -56,4 +56,4 @@ useEffect(() => {
   );
 }
 
-export default Celebre;
+export default Frase;
