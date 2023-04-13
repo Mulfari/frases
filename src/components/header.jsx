@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
 import './styles/header.css';
 
-function Header() {
+const Header = () => {
   return (
-    <div className="header">
-      <h1 className="header__title">Quote Machine</h1>
-    </div>
+    <header className="header">
+      <div className="light"></div>
+      <h1 className="header-title">Cosmic Curiosities</h1>
+    </header>
   );
-}
+};
 
 export default Header;
