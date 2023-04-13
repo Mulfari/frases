@@ -8,7 +8,7 @@ import image4 from "./components/images/image4.png";
 import image5 from "./components/images/image5.png";
 import image6 from "./components/images/image6.png";
 import image7 from "./components/images/image7.png";
-import Header from "./components/Header";
+import Header from './components/Header';
 
 function App() {
   const images = [image1, image2, image3, image4, image5, image6, image7];
