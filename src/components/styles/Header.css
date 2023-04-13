@@ -1,0 +1,25 @@
+.header {
+  position: relative;
+  text-align: center;
+  margin: 30px 0;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 20px 0;
+}
+
+.header-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: #00d1ff;
+  text-shadow: 0 0 5px #00d1ff, 0 0 10px #00d1ff, 0 0 15px #00d1ff, 0 0 20px #00d1ff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #00d1ff, 0 0 10px #00d1ff, 0 0 15px #00d1ff, 0 0 20px #00d1ff;
+  }
+  to {
+    text-shadow: 0 0 10px #00d1ff, 0 0 20px #00d1ff, 0 0 30px #00d1ff, 0 0 40px #00d1ff;
+  }
+}
